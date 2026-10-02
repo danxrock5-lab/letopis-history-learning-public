@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: letopis-history-api
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /api/health
+    disk:
+      name: letopis-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_DB_PATH
+        value: /data/letopis.sqlite
+      - key: APP_ORIGIN
+        value: https://letopis-history-api.onrender.com
+      - key: INITIAL_ADMIN_NAME
+        sync: false
+      - key: INITIAL_ADMIN_PASSWORD
+        sync: false

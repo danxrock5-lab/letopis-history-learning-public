@@ -3,6 +3,11 @@ dist/
 .env
 .env.*
 !.env.example
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+backups/
 
 # Earlier VPS inspection scratch files in this workspace may contain credentials.
 download_remote.py
