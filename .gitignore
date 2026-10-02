@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# Earlier VPS inspection scratch files in this workspace may contain credentials.
+download_remote.py
+inspect_remote_bot.py
+live_bot.py
+live_sections.txt
+patch_remote.py
+probe_bot.py
+remote_bot_dump.txt
+remote_bot_inspect.txt
+remote_patterns.txt
+remote_snippets.txt
+session_inspect_bot.py
